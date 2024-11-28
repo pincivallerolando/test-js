@@ -19,14 +19,14 @@
       $scope.max = 90;
 
       $scope.calcola = function(){
-        console.log("ciao");
+        console.log("ciao 2");
         window.alert();
       }
     }]);
 </script>
 <form name="myForm" ng-controller="ExampleController">
 
-  Model as range: <input type="range" name="range" ng-model="value" min="{{min}}"  max="{{max}}" step="10" ng-change="calcola()">
+  Model as range: <input type="range" ng-input-range name="range" ng-model="value" min="{{min}}"  max="{{max}}" step="10" ng-change="calcola()">
   <hr>
   Model as number: <input type="number" ng-model="value"><br>
   Min: <input type="number" ng-model="min"><br>
